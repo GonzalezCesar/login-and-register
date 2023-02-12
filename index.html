@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and register</title>
+    <link rel="stylesheet" href="contenido/css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="login-and-register">
+            <div class="back-box">
+                <div class="login-box">
+                    <h3>Ya tienes cuenta?</h3>
+                    <p>Iniciar sesion</p>
+                    <button id="iniciar" type="submit">Iniciar Sesion</button>
+                </div>
+                <div class="register-box">
+                    <h3>Aun no tenes cuenta?</h3>
+                    <p>Registrate para disfrutar</p>
+                    <button id="registrarse">Registrarse</button>
+                </div>
+            </div>
+            <!--Formulario-->
+            <div class="loginregisterbox">
+                <!--Login-->
+                <form id="formlogin" class="formulariologin">
+                    <h2>Iniciar sesión</h2>
+                    <input id="name" name="name" type="text" placeholder="Enter username " >
+                    <input id="password" name="password" type="password" placeholder="Enter password " >
+                    <span id="usernameError" style="color:red;"></span>
+                    <button id="Entrar" type="submit">Entrar</button>
+                </form>
+                <!--Register-->
+                <form id="registerform" class="formularioregister">
+                    <h2>Registrarse</h2>
+
+                    <label for="username">Username:</label>
+                    <input id="username" type="text" placeholder="Nombre Completo" required>
+            
+                    <label for="email">Email:</label>
+                    <input id="Email" type="text" placeholder="Correo Electronico" required>
+        
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" placeholder="password" required>
+
+                    
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" placeholder="confirm Password" required>
+
+                    <button id="registrarse" type="submit">Registrarse</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./contenido/js/script.js"></script>
+</body>
+
+</html>

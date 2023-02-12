@@ -1,0 +1,122 @@
+body {
+    background: #fffc00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffc00, #ffffff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffc00, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 1000vh;
+}
+
+.login-box {
+    width: auto;
+    height: auto;
+    background: rgb(0, 85, 255);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 30PX;
+    box-shadow: 23px 23px 40px rgb(196, 136, 136),
+        -23px -23px 40px #ffffff;
+}
+
+.login-box h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.login-box h2:hover {
+    cursor: pointer;
+    letter-spacing: 3px;
+    transform: 0.5s;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.login-box button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #0099ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.login-box button:hover {
+    transform: scale(100%);
+    background-color: rgb(0, 255, 204);
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    left: 50px;
+    border-bottom: 30px;
+    margin-bottom: 30PX;
+    transition: 0.2s;
+}
+
+.login-box a:hover {
+    cursor: pointer;
+    color: rgb(146, 107, 107);
+}
+
+.error {
+    color: red;
+    font-size: 1em;
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.7em;
+    text-shadow: -5px 6px 7px rgb(0, 0, 0);
+    text-decoration: none;
+    display: none;
+}
+
+p {
+    display: block;
+    margin-block-start: -1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
